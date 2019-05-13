@@ -1,8 +1,41 @@
-import 'package:flutter/material.dart';
-import 'package:learn_flutter_app/hello_world_demo.dart';
-import 'package:learn_flutter_app/theme_use_demo.dart';
+import 'dart:io';
 
-void main() => runApp(MyApp());
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:learn_flutter_app/alert_dialog_demo.dart';
+import 'package:learn_flutter_app/appbar_demo.dart';
+import 'package:learn_flutter_app/bottom_navigator_demo.dart';
+import 'package:learn_flutter_app/container_demo.dart';
+import 'package:learn_flutter_app/default_tab_controller_demo.dart';
+import 'package:learn_flutter_app/drawer_demo.dart';
+import 'package:learn_flutter_app/flat_button_demo.dart';
+import 'package:learn_flutter_app/floating_action_button_demo.dart';
+import 'package:learn_flutter_app/form_demo.dart';
+import 'package:learn_flutter_app/grid_list_demo.dart';
+import 'package:learn_flutter_app/hello_world_demo.dart';
+import 'package:learn_flutter_app/horizontal_list_dmeo.dart';
+import 'package:learn_flutter_app/icon_demo.dart';
+import 'package:learn_flutter_app/image_demo.dart';
+import 'package:learn_flutter_app/list_demo.dart';
+import 'package:learn_flutter_app/long_list_demo.dart';
+import 'package:learn_flutter_app/popup_menu_demo.dart';
+import 'package:learn_flutter_app/raisedbutton_demo.dart';
+import 'package:learn_flutter_app/route_demo.dart';
+import 'package:learn_flutter_app/scaffold_demo.dart';
+import 'package:learn_flutter_app/simple_dialog_demo.dart';
+import 'package:learn_flutter_app/tab_bar_demo.dart';
+import 'package:learn_flutter_app/text_demo.dart';
+import 'package:learn_flutter_app/theme_use_demo.dart';
+import 'package:learn_flutter_app/url_launcher_demo.dart';
+
+void main() {
+  runApp(MyApp());
+
+  if (Platform.isAndroid) {
+    var style = SystemUiOverlayStyle(statusBarColor: Colors.transparent);
+    SystemChrome.setSystemUIOverlayStyle(style);
+  }
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -23,7 +56,53 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.pink[300],
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo',),
+//      home: LongListDemo(items: List<String>.generate(500, (i) => "Item $i"),),
+//    routes: {
+//        '/first': (context) => FirstPage(),
+//      '/second' : (context) => SecondPage()
+//    },
+//      initialRoute: '/first',
+      home: AlertDialogDemo(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('First Page'),
+      ),
+      body: Center(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              Text('First Page'),
+              RaisedButton(
+                onPressed: () => Navigator.pushNamed(context, '/second'),
+                child: Text('点击跳转'),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class SecondPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Second Page'),
+      ),
+      body: Center(
+        child: Text('Second Page'),
+      ),
     );
   }
 }
