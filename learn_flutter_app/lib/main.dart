@@ -3,30 +3,64 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:learn_flutter_app/alert_dialog_demo.dart';
+import 'package:learn_flutter_app/align_demo.dart';
 import 'package:learn_flutter_app/appbar_demo.dart';
+import 'package:learn_flutter_app/aspect_ratio_demo.dart';
+import 'package:learn_flutter_app/baseline_demo.dart';
 import 'package:learn_flutter_app/bottom_navigator_demo.dart';
+import 'package:learn_flutter_app/card_demo.dart';
+import 'package:learn_flutter_app/constrainedbox_demo.dart';
 import 'package:learn_flutter_app/container_demo.dart';
+import 'package:learn_flutter_app/container_image_demo.dart';
+import 'package:learn_flutter_app/cupertino_activity_indicator_demo.dart';
+import 'package:learn_flutter_app/cupertino_alertdialog_dem.dart';
+import 'package:learn_flutter_app/cupertino_button_demo.dart';
+import 'package:learn_flutter_app/cupertino_combine_demo.dart';
 import 'package:learn_flutter_app/default_tab_controller_demo.dart';
+import 'package:learn_flutter_app/dismissible_demo.dart';
 import 'package:learn_flutter_app/drawer_demo.dart';
+import 'package:learn_flutter_app/fitbox_demo.dart';
 import 'package:learn_flutter_app/flat_button_demo.dart';
 import 'package:learn_flutter_app/floating_action_button_demo.dart';
 import 'package:learn_flutter_app/form_demo.dart';
+import 'package:learn_flutter_app/fractionally_sizedbox_demo.dart';
+import 'package:learn_flutter_app/gesture_detector_demo.dart';
 import 'package:learn_flutter_app/grid_list_demo.dart';
+import 'package:learn_flutter_app/grid_view_demo.dart';
 import 'package:learn_flutter_app/hello_world_demo.dart';
 import 'package:learn_flutter_app/horizontal_list_dmeo.dart';
 import 'package:learn_flutter_app/icon_demo.dart';
 import 'package:learn_flutter_app/image_demo.dart';
+import 'package:learn_flutter_app/index_stack_demo.dart';
+import 'package:learn_flutter_app/layout_demo.dart';
+import 'package:learn_flutter_app/limited_box_demo.dart';
 import 'package:learn_flutter_app/list_demo.dart';
+import 'package:learn_flutter_app/listview_demo.dart';
 import 'package:learn_flutter_app/long_list_demo.dart';
+import 'package:learn_flutter_app/navigator_return_demo.dart';
+import 'package:learn_flutter_app/navigator_route_demo.dart';
+import 'package:learn_flutter_app/offstage_demo.dart';
+import 'package:learn_flutter_app/overflowbox_demo.dart';
+import 'package:learn_flutter_app/padding_demo.dart';
 import 'package:learn_flutter_app/popup_menu_demo.dart';
+import 'package:learn_flutter_app/positioned_demo.dart';
 import 'package:learn_flutter_app/raisedbutton_demo.dart';
 import 'package:learn_flutter_app/route_demo.dart';
+import 'package:learn_flutter_app/route_pass_info_demo.dart';
+import 'package:learn_flutter_app/row_demo.dart';
 import 'package:learn_flutter_app/scaffold_demo.dart';
 import 'package:learn_flutter_app/simple_dialog_demo.dart';
+import 'package:learn_flutter_app/sized_box_demo.dart';
+import 'package:learn_flutter_app/stack_demo.dart';
+import 'package:learn_flutter_app/swiper_demo.dart';
 import 'package:learn_flutter_app/tab_bar_demo.dart';
+import 'package:learn_flutter_app/table_demo.dart';
 import 'package:learn_flutter_app/text_demo.dart';
+import 'package:learn_flutter_app/textfield_demo.dart';
 import 'package:learn_flutter_app/theme_use_demo.dart';
+import 'package:learn_flutter_app/transform_demo.dart';
 import 'package:learn_flutter_app/url_launcher_demo.dart';
+import 'package:learn_flutter_app/wrap_demo.dart';
 
 void main() {
   runApp(MyApp());
@@ -43,6 +77,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -62,7 +97,7 @@ class MyApp extends StatelessWidget {
 //      '/second' : (context) => SecondPage()
 //    },
 //      initialRoute: '/first',
-      home: AlertDialogDemo(),
+      home: FirstScreenDemo(),
     );
   }
 }
