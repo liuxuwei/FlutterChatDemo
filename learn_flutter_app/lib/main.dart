@@ -8,7 +8,9 @@ import 'package:learn_flutter_app/appbar_demo.dart';
 import 'package:learn_flutter_app/aspect_ratio_demo.dart';
 import 'package:learn_flutter_app/baseline_demo.dart';
 import 'package:learn_flutter_app/bottom_navigator_demo.dart';
+import 'package:learn_flutter_app/boxshadow_demo.dart';
 import 'package:learn_flutter_app/card_demo.dart';
+import 'package:learn_flutter_app/clip_demo.dart';
 import 'package:learn_flutter_app/constrainedbox_demo.dart';
 import 'package:learn_flutter_app/container_demo.dart';
 import 'package:learn_flutter_app/container_image_demo.dart';
@@ -16,6 +18,7 @@ import 'package:learn_flutter_app/cupertino_activity_indicator_demo.dart';
 import 'package:learn_flutter_app/cupertino_alertdialog_dem.dart';
 import 'package:learn_flutter_app/cupertino_button_demo.dart';
 import 'package:learn_flutter_app/cupertino_combine_demo.dart';
+import 'package:learn_flutter_app/decoratedbox_demo.dart';
 import 'package:learn_flutter_app/default_tab_controller_demo.dart';
 import 'package:learn_flutter_app/dismissible_demo.dart';
 import 'package:learn_flutter_app/drawer_demo.dart';
@@ -34,17 +37,21 @@ import 'package:learn_flutter_app/image_demo.dart';
 import 'package:learn_flutter_app/index_stack_demo.dart';
 import 'package:learn_flutter_app/layout_demo.dart';
 import 'package:learn_flutter_app/limited_box_demo.dart';
+import 'package:learn_flutter_app/lineargradient_demo.dart';
 import 'package:learn_flutter_app/list_demo.dart';
 import 'package:learn_flutter_app/listview_demo.dart';
 import 'package:learn_flutter_app/long_list_demo.dart';
 import 'package:learn_flutter_app/navigator_return_demo.dart';
 import 'package:learn_flutter_app/navigator_route_demo.dart';
 import 'package:learn_flutter_app/offstage_demo.dart';
+import 'package:learn_flutter_app/opacity_demo.dart';
 import 'package:learn_flutter_app/overflowbox_demo.dart';
 import 'package:learn_flutter_app/padding_demo.dart';
+import 'package:learn_flutter_app/painting_board_demo.dart';
 import 'package:learn_flutter_app/popup_menu_demo.dart';
 import 'package:learn_flutter_app/positioned_demo.dart';
 import 'package:learn_flutter_app/raisedbutton_demo.dart';
+import 'package:learn_flutter_app/rotatedbox_demo.dart';
 import 'package:learn_flutter_app/route_demo.dart';
 import 'package:learn_flutter_app/route_pass_info_demo.dart';
 import 'package:learn_flutter_app/row_demo.dart';
@@ -97,7 +104,7 @@ class MyApp extends StatelessWidget {
 //      '/second' : (context) => SecondPage()
 //    },
 //      initialRoute: '/first',
-      home: FirstScreenDemo(),
+      home: PaintingDemo(),
     );
   }
 }
