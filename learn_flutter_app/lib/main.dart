@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:learn_flutter_app/alert_dialog_demo.dart';
 import 'package:learn_flutter_app/align_demo.dart';
+import 'package:learn_flutter_app/animation_demo.dart';
 import 'package:learn_flutter_app/appbar_demo.dart';
 import 'package:learn_flutter_app/aspect_ratio_demo.dart';
 import 'package:learn_flutter_app/baseline_demo.dart';
@@ -31,6 +32,7 @@ import 'package:learn_flutter_app/gesture_detector_demo.dart';
 import 'package:learn_flutter_app/grid_list_demo.dart';
 import 'package:learn_flutter_app/grid_view_demo.dart';
 import 'package:learn_flutter_app/hello_world_demo.dart';
+import 'package:learn_flutter_app/hero_demo.dart';
 import 'package:learn_flutter_app/horizontal_list_dmeo.dart';
 import 'package:learn_flutter_app/icon_demo.dart';
 import 'package:learn_flutter_app/image_demo.dart';
@@ -104,7 +106,7 @@ class MyApp extends StatelessWidget {
 //      '/second' : (context) => SecondPage()
 //    },
 //      initialRoute: '/first',
-      home: PaintingDemo(),
+      home: HeroDemo(),
     );
   }
 }
