@@ -24,6 +24,7 @@ class ContactItem extends StatelessWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              //contact_header中，如果不传imageName参数会报错
               imageName == null
                   ? Image.network(
                       (item.avatarUrl != ''
